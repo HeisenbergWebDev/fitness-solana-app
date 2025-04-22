@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# Solana Fitness App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native alapú fitness alkalmazás Solana blockchain integrációval. Az alkalmazás lehetővé teszi a felhasználók számára, hogy edzésprogramokat kövessenek, táplálkozási tervet készítsenek, és Solana tokeneket, NFT-ket kapjanak a teljesítményükért.
 
-## Get started
+## 🚀 Funkciók
 
-1. Install dependencies
+- **Bejelentkezési rendszer**
+  - Email és jelszó alapú bejelentkezés
+  - Regisztrációs lehetőség (hamarosan)
+  - Solana témájú UI
 
-   ```bash
-   npm install
-   ```
+- **Fő képernyő**
+  - Fitness kártyák különböző kategóriákban
+  - Óra csatlakoztatás (hamarosan)
+  - Solana pénztárca integráció (hamarosan)
 
-2. Start the app
+- **Navigáció**
+  - Alul elhelyezett tab navigáció
+  - Home, Personal, Activity és Settings képernyők
+  - Animált átmenetek
 
-   ```bash
-    npx expo start
-   ```
+## 🛠 Telepített csomagok
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```json
+{
+  "dependencies": {
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.0.14",
+    "@react-navigation/bottom-tabs": "^7.0.14",
+    "@expo/vector-icons": "^14.0.0",
+    "expo": "~52.0.46",
+    "expo-status-bar": "~2.0.1",
+    "react": "18.3.1",
+    "react-native": "0.76.9",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0"
+  }
+}
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 Képernyők
 
-## Learn more
+### Bejelentkezési képernyő
+- Modern, Solana témájú design
+- Email és jelszó bevitel
+- Bejelentkezés és regisztráció gombok
 
-To learn more about developing your project with Expo, look at the following resources:
+### Fő képernyő
+- Fitness kártyák különböző kategóriákban:
+  - Edzés Programok
+  - Táplálkozás
+  - Fogyás
+  - Izomnövelés
+  - Personal Edző
+- Óra csatlakoztatás gomb (bal felső sarok)
+- Pénztárca gomb (jobb felső sarok)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Tab Navigáció
+- Home
+- Personal
+- Activity
+- Settings
 
-## Join the community
+## 🎨 Design
 
-Join our community of developers creating universal apps.
+- **Színek**
+  - Háttér: #000000 (fekete)
+  - Fő szín: #14F195 (Solana zöld)
+  - Másodlagos szín: #1A1A1A (sötétszürke)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Animációk**
+  - Gomb nyomás animációk
+  - Képernyőváltás animációk
+  - Interaktív UI elemek
+
+## 🔄 Fejlesztés
+
+### Telepítés
+```bash
+# Függőségek telepítése
+npm install
+
+# Expo szerver indítása
+npx expo start
+```
+
+### Fejlesztői környezet
+- Expo Go alkalmazás használata teszteléshez
+- React Native Debugger hibakereséshez
+- Metro bundler fejlesztéshez
+
+## 📦 Következő lépések
+
+- [ ] Regisztrációs képernyő implementálása
+- [ ] Óra csatlakoztatás implementálása
+- [ ] Solana pénztárca integráció
+- [ ] NFT és token rendszer implementálása
+- [ ] Edzés programok részletes megjelenítése
+- [ ] Táplálkozási terv készítő
+- [ ] Progress követés
+
+## 📝 Licenc
+
+MIT
+
+## 👥 Közreműködés
+
+A projekt nyitott a közreműködésre. Kérlek, kövesd a következő lépéseket:
+
+1. Fork-old a repository-t
+2. Hozz létre egy új branch-et (`git checkout -b feature/új-funkció`)
+3. Commit-old a változtatásaidat (`git commit -m 'Új funkció hozzáadása'`)
+4. Push-old a branch-edet (`git push origin feature/új-funkció`)
+5. Hozz létre egy Pull Request-et
